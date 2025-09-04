@@ -1,0 +1,1 @@
+valkey-cli valkey-benchmark -n 10000 -c 50
