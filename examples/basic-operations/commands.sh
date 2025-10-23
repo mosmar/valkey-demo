@@ -21,11 +21,11 @@ valkey-cli HGET user:1000 name
 valkey-cli HGETALL user:1000
 valkey-cli DEL user:1000
 
-# Sets
+# Sets: Add the specified members to the set stored at key. Specified members that are already a member of this set are ignored. 
 valkey-cli SADD colors red blue green
 valkey-cli SMEMBERS colors
 
-# Lists
+# Lists: Insert all the specified values at the head of the list stored at key
 valkey-cli LPUSH tasks "task1"
 valkey-cli LPUSH tasks "task2"
 valkey-cli LRANGE tasks 0 -1
