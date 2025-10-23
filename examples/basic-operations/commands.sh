@@ -2,6 +2,7 @@
 set -euo pipefail
 
 # Quick demo commands for Valkey (run line-by-line or as a script)
+docker exec -it valkey-server valkey-cli
 
 valkey-cli ping
 
